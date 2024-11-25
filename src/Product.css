@@ -1,0 +1,227 @@
+.product {
+    padding: 10%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f5e7;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*h1 {
+    color: #3D405B;
+
+}*/
+
+.product-header {
+    width: 100%;
+    background-color: #fff8c5;
+    padding: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}
+
+.back-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    /* Adjust size */
+    padding: 5px;
+    width: 30px;
+    /* Set a smaller width */
+    height: 30px;
+    /* Set a smaller height */
+}
+
+.back-icon {
+    width: 24px;
+    /* Reduce the size of the icon */
+    height: 24px;
+    object-fit: contain;
+}
+
+
+.product-content {
+
+
+    display: flex;
+    flex-direction: column;
+    /* Ensures elements stack vertically */
+    align-items: center;
+
+    gap: 50%;
+    ;
+    /* Add spacing between elements */
+}
+
+.product-name {
+    font-size: 28px;
+    color: #333;
+    margin: 0;
+    /* Reset margins to avoid unnecessary spacing */
+    padding: 0;
+    /* Remove extra padding */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    /* Ensure the title text is centered */
+}
+
+
+.product-content {
+    padding: 5%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 25%;
+    /* Add space between columns */
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px;
+
+}
+
+.product-image-section {
+    flex: 2;
+    /* Take 2/3 of the space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20%;
+}
+
+.product-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+.product-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.action-button {
+    background-color: #f28b4c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #e67335;
+}
+
+/* Profile Card Container */
+.profile-card {
+    width: 100%;
+    max-width: 400px;
+    /* Controls the card's width */
+    margin: 0 auto;
+    /* Centers the card horizontally */
+    background-color: #F2CC8F;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    /* Adds consistent spacing between elements */
+}
+
+/* Title */
+.profile-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+/* Photo Upload Section */
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+
+.photo-upload {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Form Section */
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.profile-input,
+.profile-description {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.profile-description {
+    height: 80px;
+    resize: none;
+}
